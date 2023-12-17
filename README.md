@@ -1,4 +1,13 @@
 # Harmonious HR App
+Welcome to the Harmonious HR App demo. To use the demo, it's recommended to log directly into the Admin user account:
+- Username 
+```admin```
+- Password
+```admin123```
+
+Once logged in, you can add and manage admin tasks, and view the demo for onboarding.
+
+Alternatively, the app features secure login, so feel free to register and play around with the task manager features of the app.
 
 ## Instructions to run locally
 - Remember to rename your example_settings.py file to settings.py, and to add your own secret key and host.
