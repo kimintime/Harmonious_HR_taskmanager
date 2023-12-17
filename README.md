@@ -1,9 +1,13 @@
 # Harmonious HR App
 Welcome to the Harmonious HR App demo. To use the demo, it's recommended to log directly into the Admin user account:
 - Username 
-```admin```
+```
+admin
+```
 - Password
-```admin123```
+```
+admin123
+```
 
 Once logged in, you can add and manage admin tasks, and view the demo for onboarding.
 
@@ -16,9 +20,13 @@ Alternatively, the app features secure login, so feel free to register and play 
 - Download and install the latest version of Django
 
 - Run 
-```python3 -m django --version```
+```
+python3 -m django --version
+```
 To verify the installation -or- 
-```python -m -django --version```
+```
+python -m -django --version
+```
 
 ### Configuring the Environment
 
