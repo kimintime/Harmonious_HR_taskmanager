@@ -60,9 +60,13 @@ pip install -r requirements.txt
 ### Run the Server
 
 - Run 
-```python3 manage.py runserver```
+```
+python3 manage.py runserver
+```
 and open the address to run the project locally -or- 
-```python manage.py runserver```
+```
+python manage.py runserver
+```
 
 ## Setting up the database
 - In your settings.py, find or add  this to the `DATABASES`:
