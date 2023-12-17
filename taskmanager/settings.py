@@ -34,6 +34,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
 'harmonioushr.azurewebsites.net']
 
+CSRF_TRUSTED_ORIGINS = ['harmonioushr.azurewebsites.net']
+
 
 # Application definition
 
