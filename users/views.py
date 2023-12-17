@@ -6,6 +6,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 class RegisterPage(FormView):
    template_name = 'users/register.html'
@@ -24,11 +25,16 @@ class RegisterPage(FormView):
          return redirect('task')
       return super(RegisterPage, self).get(*args, **kwargs)
    
-
 class CustomLoginView(LoginView):
    template_name = 'users/login.html'
    fields = '__all__'
    redirect_authenticated_user = True
+   
+   def get(self, request, *args, **kwargs):
+        if not request.user.is_authenticated:
+            messages.info(request, 'Please login to username: admin, password: admin123 for demo, or register to create new user.')
+            print("message added")
+        return super().get(request, *args, **kwargs)
 
    def get_success_url(self):
       return reverse_lazy('tasks')
