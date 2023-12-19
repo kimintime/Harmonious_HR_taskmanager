@@ -24,7 +24,7 @@ The Harmonious HR Task Manager App is our entry to the 2023 Mimmit Koodaa Ultrah
 ### About the App
 See the demo video for more information. Harmonious Task Manager aims to help automate common tasks for HR professionals, such as launching all tasks related to onboarding a new employee. 
 
-[See the demo video here](media/IMG_1463.mp4)
+[See the demo video here]
 
 ## Instructions to run locally
 - Remember to rename your example_settings.py file to settings.py, and to add your own secret key and host.
