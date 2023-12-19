@@ -13,6 +13,18 @@ Once logged in, you can add and manage admin tasks, and view the demo for onboar
 
 Alternatively, the app features secure login, so feel free to register and play around with the task manager features of the app.
 
+## About
+The Harmonious HR Task Manager App is our entry to the 2023 Mimmit Koodaa Ultrahack Hackathon. Our team consists of:  
+  
+- [Noona Wilskman](https://www.linkedin.com/in/wilskman/) : Team Leader
+- [Marika Luostarinen](https://www.linkedin.com/in/marikaluostarinen/) : Creative Media Expert
+- [Kimberly Ruohio](https://www.linkedin.com/in/kimberly-ruohio-1200/) : Software Developer
+- [Nina Tulilahti](https://www.linkedin.com/in/ninatulilahti/) : Software Developer
+
+### About the App
+See the demo video for more information. Harmonious Task Manager aims to help automate common tasks for HR professionals, such as launching all tasks related to onboarding a new employee. 
+
+
 ## Instructions to run locally
 - Remember to rename your example_settings.py file to settings.py, and to add your own secret key and host.
 - Be sure that settings.py is included in the .gitignore
