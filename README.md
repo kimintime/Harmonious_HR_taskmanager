@@ -36,6 +36,8 @@ Once logged in, you can add and manage admin tasks, and view the demo for onboar
 
 Alternatively, the app features secure login, so feel free to register and play around with the task manager features of the app.
 
+[Back](#harmonious-hr-app)
+
 ## About
 The Harmonious HR Task Manager App is our entry to the 2023 Mimmit Koodaa Ultrahack Hackathon. Our team consists of:  
   
@@ -57,12 +59,16 @@ See the demo video for more information. Harmonious Task Manager aims to help au
 #### Future Additions
 - Full implementation of profile picture upload (currently only supported in the backend)
 
+[Back](#harmonious-hr-app)
+
 ## How to use
 In order to use the app, you'll have to login. Registering a new user is free and secure, but you'll only see the todo list features of the app.
 
 User login
 
 User register
+
+[Back](#harmonious-hr-app)
 
 ### Harmious Demo
 Logged into Admin, you'll see the tasks associated with that account, you can click on any of them to view or edit, or select `ADD+` to add a task. For the demo, select the `Onboarding` task.
@@ -81,6 +87,8 @@ Under the Admin's profile page, you can see all those tasks associated with onbo
 
 Activated tasks
 
+[Back](#harmonious-hr-app)
+
 ### Navigation Bar
 - From the top navigation bar, you can navigate `Back` to previous page, `Home` to your task list, `Profile` to your account profile, or `Log out` to log out of the app.  
 
@@ -94,6 +102,8 @@ confirm delete
 Either confirm the deletion or click `Back` to go back to the tasks page.
 
 - Select the task's title to view or edit that task.
+
+[Back](#harmonious-hr-app)
 
 ### Adding and Editing Tasks
 The add and edit tasks forms are exactly the same, as shown in the demo section above. You may view, add, or edit information, and select `Submit` to save all changes, or go `Back` to discard.
@@ -114,6 +124,8 @@ To verify the installation -or-
 ```
 python -m -django --version
 ```
+
+[Back](#harmonious-hr-app)
 
 ### Configuring the Environment
 
@@ -136,6 +148,9 @@ source venv/bin/activate
 venv\Scripts\activate
 
 ```
+
+[Back](#harmonious-hr-app)
+
 ### Install Dependencies
 - With the virtual environment activated, use pip to install the project dependencies listed in the requirements.txt file:
 
@@ -154,6 +169,8 @@ and open the address to run the project locally -or-
 ```
 python manage.py runserver
 ```
+
+[Back](#harmonious-hr-app)
 
 ## Setting up the database
 - In your settings.py, find or add  this to the `DATABASES`:
@@ -195,3 +212,5 @@ python manage.py makemigrations
 python manage.py migrate
 
 ```
+
+[Back](#harmonious-hr-app)
