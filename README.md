@@ -64,7 +64,10 @@ See the demo video for more information. Harmonious Task Manager aims to help au
 ## How to use
 In order to use the app, you'll have to login. Registering a new user is free and secure, but you'll only see the todo list features of the app.
 
-User login
+<img width="1461" alt="login" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/e48d8b44-dcb4-4c7a-8a6f-eee88820ee78">
+
+
+
 
 User register
 
