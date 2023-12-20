@@ -64,31 +64,28 @@ See the demo video for more information. Harmonious Task Manager aims to help au
 ## How to use
 In order to use the app, you'll have to login. Registering a new user is free and secure, but you'll only see the todo list features of the app.
 
-<img width="1461" alt="login" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/e48d8b44-dcb4-4c7a-8a6f-eee88820ee78">
+<img width="1461" alt="login" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/f26b791d-c2db-4796-96d6-4f2585a7a180">
 
-
-
-
-User register
+<img width="1470" alt="register" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/656bd44a-a020-4265-8f71-cff52eacc06d">
 
 [Back](#harmonious-hr-app)
 
 ### Harmious Demo
 Logged into Admin, you'll see the tasks associated with that account, you can click on any of them to view or edit, or select `ADD+` to add a task. For the demo, select the `Onboarding` task.
 
-Task list
+<img width="1470" alt="tasks" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/fde74b7b-4c97-4025-8260-ffcd34de7c69">
 
-Onboarding Task
+<img width="1470" alt="onboardingTask" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/2465e06d-10bd-4a19-a6df-213acb818116">
 
 Note that the task bar shows who the task was assigned to, when it was created, and it's status. You can edit the due date, select to complete the task, as well as edit it's name and description.
 
 Click the `Launch` button to launch all automations associated with this task.
 
-Admin profile
+<img width="1470" alt="admin" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/0e19d5f7-a774-4b62-a907-7328473dda38">
 
 Under the Admin's profile page, you can see all those tasks associated with onboarding. This is just a demo of the idea of Harmonious. These automated tasks automatically change with the task type. Select `Activate` to check off all tasks. When all tasks are selected, `New Hire Process` turns green, indicating that all the automated tasks have launched. Select `Deactivate` turn cancel launching tasks. Note that this is a demo, and nothing actually happens.
 
-Activated tasks
+<img width="1470" alt="activatedTasks" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/3698e92e-a84b-4192-8882-7d2e9cb59189">
 
 [Back](#harmonious-hr-app)
 
@@ -100,7 +97,7 @@ Activated tasks
   
 - The button icon to the left of each task represents its status as complete (green) or incomplete (grey). For each task you can see the title, who it is assigned to, its status, and the option to delete. Deleting a task takes you to a final confirmation screen.
 
-confirm delete
+<img width="1470" alt="delete" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/6f7cd52d-510e-4069-affd-4c2131ad8eea">
 
 Either confirm the deletion or click `Back` to go back to the tasks page.
 
