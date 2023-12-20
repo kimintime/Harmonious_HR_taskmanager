@@ -22,7 +22,7 @@
 - [Setting up the Database](#setting-up-the-database)
 
 ## Quickstart
-Welcome to the Harmonious HR App demo. To use the demo, it's recommended to log directly into the Admin user account:
+Welcome to the [Harmonious HR App demo](https://harmonioushr.azurewebsites.net). To use the demo, it's recommended to log directly into the Admin user account:
 - Username 
 ```
 admin
