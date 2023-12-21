@@ -86,7 +86,7 @@ Click the `Launch` button to launch all automations associated with this task.
 
 Under the Admin's profile page, you can see all those tasks associated with onboarding. This is just a demo of the idea of Harmonious. These automated tasks automatically change with the task type. Select `Activate` to check off all tasks. When all tasks are selected, `New Hire Process` turns green, indicating that all the automated tasks have launched. Select `Deactivate` turn cancel launching tasks. Note that this is a demo, and nothing actually happens.
 
-<img width="1470" alt="activatedTasks" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/3698e92e-a84b-4192-8882-7d2e9cb59189">
+<img width="1470" alt="activatedTasks" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/b4ee0efc-fc50-47c1-b628-7a12693f98ac">
 
 [Back](#harmonious-hr-app)
 
