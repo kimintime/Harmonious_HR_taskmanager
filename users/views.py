@@ -1,3 +1,5 @@
+from typing import Any
+from django import forms
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.views.generic.edit import FormView
@@ -7,6 +9,8 @@ from django.contrib.auth.views import LoginView
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
+
+from .models import Profile
 
 class RegisterPage(FormView):
    template_name = 'users/register.html'
@@ -39,7 +43,29 @@ class CustomLoginView(LoginView):
    def get_success_url(self):
       return reverse_lazy('tasks')
 
+class ProfileUpdateForm(forms.ModelForm):
+   class Meta:
+      model = Profile
+      fields = ['image']
 
+class ProfileUpdateView(FormView):
+   form_class = ProfileUpdateForm
+   success_url = reverse_lazy('profile')
+   template_name = 'users/profile.html'
+   
+   def form_valid(self, form):
+      profile = form.save(commit=False)
+      profile.user = self.request.user
+      profile.save()
+      
+      return super().form_valid(form)
+   
+   def get_form_kwargs(self):
+      kwargs = super().get_form_kwargs()
+      kwargs.update(instance=self.request.user.profile)
+      
+      return kwargs
+   
 @login_required
 def profile(request):
    return render(request, 'users/profile.html')
