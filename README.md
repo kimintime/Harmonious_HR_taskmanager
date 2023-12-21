@@ -82,7 +82,7 @@ Note that the task bar shows who the task was assigned to, when it was created, 
 
 Click the `Launch` button to launch all automations associated with this task.
 
-<img width="1470" alt="admin" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/0e19d5f7-a774-4b62-a907-7328473dda38">
+<img width="1470" alt="admin" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/539e0edb-b116-4a7d-828a-02f3fab11f6f">
 
 Under the Admin's profile page, you can see all those tasks associated with onboarding. This is just a demo of the idea of Harmonious. These automated tasks automatically change with the task type. Select `Activate` to check off all tasks. When all tasks are selected, `New Hire Process` turns green, indicating that all the automated tasks have launched. Select `Deactivate` turn cancel launching tasks. Note that this is a demo, and nothing actually happens.
 
@@ -111,6 +111,8 @@ The add and edit tasks forms are exactly the same, as shown in the demo section 
 
 ### Profile page
 Currently new users have a default profile image, and may update the image to a new one. Click on `Change Profile Picture` to select a new profile picture. Click on `Upload` to apply the new image or `Cancel` to exit without saving.
+
+<img width="1470" alt="imageUpload" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/a56bc0df-d8ca-4397-b245-ad6d31c0ea21">
 
 ---
 
