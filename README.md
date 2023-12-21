@@ -55,9 +55,10 @@ See the demo video for more information. Harmonious Task Manager aims to help au
 - Secure registration and login
 - Users see their own tasks and tasks are remembered
 - Basic todo list functions of adding, editing, and deleting tasks
+- Uploading user profile image
 
 #### Future Additions
-- Full implementation of profile picture upload (currently only supported in the backend)
+- User profile updating
 
 [Back](#harmonious-hr-app)
 
@@ -90,7 +91,7 @@ Under the Admin's profile page, you can see all those tasks associated with onbo
 [Back](#harmonious-hr-app)
 
 ### Navigation Bar
-- From the top navigation bar, you can navigate `Back` to previous page, `Home` to your task list, `Profile` to your account profile, or `Log out` to log out of the app.  
+- From the top navigation bar, you can navigate `Back` to previous page, `Home` to your task list, `Profile` to your account profile, or `Log out` to log out of the app.  `Help` brings you to this page.
 
 ### Task List
 - The title bar welcomes you to the task list, showing you how many incomplete tasks you currently have. The search bar is case sensitive, and shows results once you hit enter or the `Search` button. Remove the search input and hit enter or `Search` again to see your entire task list.  
@@ -107,6 +108,9 @@ Either confirm the deletion or click `Back` to go back to the tasks page.
 
 ### Adding and Editing Tasks
 The add and edit tasks forms are exactly the same, as shown in the demo section above. You may view, add, or edit information, and select `Submit` to save all changes, or go `Back` to discard.
+
+### Profile page
+Currently new users have a default profile image, and may update the image to a new one. Click on `Change Profile Picture` to select a new profile picture. Click on `Upload` to apply the new image or `Cancel` to exit without saving.
 
 ---
 

@@ -1,49 +1,86 @@
-{% extends 'base/main.html' %}
-{% block content %}
+{% extends 'base/main.html' %} {% block content %}
 
 <div class="header-bar">
-    <div>
-        <h1>Hello {{request.user|title}}</h1>
-    </div>
+  <div>
+    <h1>Hello {{request.user|title}}</h1>
+  </div>
 </div>
- 
+
 <div class="content-section">
-    <div class="card-body">
-        <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
-        <div class="media-body">
-            <h2> {{ user.username }}</h2>
-            <p>{{ user.email }}</p>
+  <div class="card-body">
+    <img
+      class="rounded-circle account-img"
+      src="{{ user.profile.image.url }}"
+    />
+    <div class="media-body">
+      <h2>{{ user.username }}</h2>
+      <p>{{ user.email }}</p>
 
-            <!-- Profile picture update form -->
-            <form method="POST" enctype="multipart/form-data">
-                {% csrf_token %}
-                {{ p_form }}
-                <button type="submit">Update</button>
-            </form>
-        </div>
-        {% if user.is_superuser %}
-        <div class="todo-list">
-            <h2>Current tasks</h2>
-            <h3 id="taskListTitle">New Hire Process <button id="activateButton" onclick="toggleCheckboxes()">Activate</button></h3>
-            <ul id="taskList">
-                <li><input type="checkbox" id="task1" disabled>Job offer</li>
-                <li><input type="checkbox" id="task2" disabled>Medical examination</li>
-                <li><input type="checkbox" id="task3" disabled>New hire in HCM</li>
-                <li><input type="checkbox" id="task4" disabled>Employment contract</li>
-                <li><input type="checkbox" id="task5" disabled>Additional information</li>
-                <li><input type="checkbox" id="task6" disabled>Appointment announcement in intranet</li>
-                <li><input type="checkbox" id="task7" disabled>Onboarding plan</li>
-                <li><input type="checkbox" id="task8" disabled>IT equipment and system credential orders</li>
-                <li><input type="checkbox" id="task9" disabled>ID card order</li>
-                <li><input type="checkbox" id="task10" disabled>Office key order</li>
-                <li><input type="checkbox" id="task11" disabled>Leasing car (when applicable)</li>
-                <li><input type="checkbox" id="task12" disabled>Hi-message to new hire</li>
-                <li><input type="checkbox" id="task13" disabled>Tax card reminder</li>
-                <li><input type="checkbox" id="task14" disabled>Welcome package</li>
-            </ul>
-        </div>
-        {% endif %}
+      <!-- Profile picture update form -->
+      <div id="changeImg" style="display: none">
+        <form method="POST" enctype="multipart/form-data">
+          {% csrf_token %} {{ p_form.as_p }}
+          <button type="submit">Update</button>
+        </form>
+      </div>
+      <button onclick="toggleForm(this)" style="margin-top: 5px;">Change profile picture</button>
     </div>
+    {% if user.is_superuser %}
+    <div class="todo-list">
+      <h2>Current tasks</h2>
+      <h3 id="taskListTitle">
+        New Hire Process
+        <button id="activateButton" onclick="toggleCheckboxes()">
+          Activate
+        </button>
+      </h3>
+      <ul id="taskList">
+        <li><input type="checkbox" id="task1" disabled />Job offer</li>
+        <li>
+          <input type="checkbox" id="task2" disabled />Medical examination
+        </li>
+        <li><input type="checkbox" id="task3" disabled />New hire in HCM</li>
+        <li>
+          <input type="checkbox" id="task4" disabled />Employment contract
+        </li>
+        <li>
+          <input type="checkbox" id="task5" disabled />Additional information
+        </li>
+        <li>
+          <input type="checkbox" id="task6" disabled />Appointment announcement
+          in intranet
+        </li>
+        <li><input type="checkbox" id="task7" disabled />Onboarding plan</li>
+        <li>
+          <input type="checkbox" id="task8" disabled />IT equipment and system
+          credential orders
+        </li>
+        <li><input type="checkbox" id="task9" disabled />ID card order</li>
+        <li><input type="checkbox" id="task10" disabled />Office key order</li>
+        <li>
+          <input type="checkbox" id="task11" disabled />Leasing car (when
+          applicable)
+        </li>
+        <li>
+          <input type="checkbox" id="task12" disabled />Hi-message to new hire
+        </li>
+        <li><input type="checkbox" id="task13" disabled />Tax card reminder</li>
+        <li><input type="checkbox" id="task14" disabled />Welcome package</li>
+      </ul>
+    </div>
+    {% endif %}
+  </div>
 </div>
-
+<script>
+    const toggleForm = (button) => {
+        const form = document.getElementById('changeImg');
+        if (form.style.display === 'none') {
+            form.style.display = 'block';
+            button.textContent = 'Cancel';
+        } else {
+            form.style.display = 'none';
+            button.textContent = 'Change profile picture';
+        }
+    };
+</script>
 {% endblock content %}

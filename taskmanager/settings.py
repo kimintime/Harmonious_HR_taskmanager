@@ -16,7 +16,10 @@ Example settings.py file. Adding your settings.py to .gitignore, as it will cont
 """
 
 from pathlib import Path
+from dotenv import load_dotenv
 import os 
+
+load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,10 +34,10 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-'harmonioushr.azurewebsites.net']
+# ALLOWED_HOSTS = [
+# 'harmonioushr.azurewebsites.net']
 
-CSRF_TRUSTED_ORIGINS = ['harmonioushr.azurewebsites.net']
+CSRF_TRUSTED_ORIGINS = ['https://harmonioushr.azurewebsites.net']
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 

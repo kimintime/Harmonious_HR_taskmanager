@@ -55,21 +55,27 @@ class ProfileUpdateView(LoginRequiredMixin, FormView):
    template_name = 'users/profile.html'
    
    def form_valid(self, form):
-      profile = form.save(commit=False)
-      profile.user = self.request.user
-      profile.save()
+      form.save()
       
       return super().form_valid(form)
    
    def get_form_kwargs(self):
       kwargs = super().get_form_kwargs()
-      kwargs.update(instance=self.request.user.profile)
+      if self.request.method == 'POST':
+         kwargs.update({
+            'instance': self.request.user.profile,
+            'files': self.request.FILES,
+         })
+      else:
+         kwargs.update({
+            'instance': self.request.user.profile,
+         })
       
       return kwargs
    
    def get_context_data(self, **kwargs):
       context = super().get_context_data(**kwargs)
-      context['p-form'] = self.get_form()
+      context['p_form'] = self.get_form()
       
       return context
    
