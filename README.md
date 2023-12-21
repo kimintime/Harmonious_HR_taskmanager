@@ -55,9 +55,10 @@ See the demo video for more information. Harmonious Task Manager aims to help au
 - Secure registration and login
 - Users see their own tasks and tasks are remembered
 - Basic todo list functions of adding, editing, and deleting tasks
+- Uploading user profile image
 
 #### Future Additions
-- Full implementation of profile picture upload (currently only supported in the backend)
+- User profile updating
 
 [Back](#harmonious-hr-app)
 
@@ -81,16 +82,16 @@ Note that the task bar shows who the task was assigned to, when it was created, 
 
 Click the `Launch` button to launch all automations associated with this task.
 
-<img width="1470" alt="admin" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/0e19d5f7-a774-4b62-a907-7328473dda38">
+<img width="1470" alt="admin" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/539e0edb-b116-4a7d-828a-02f3fab11f6f">
 
 Under the Admin's profile page, you can see all those tasks associated with onboarding. This is just a demo of the idea of Harmonious. These automated tasks automatically change with the task type. Select `Activate` to check off all tasks. When all tasks are selected, `New Hire Process` turns green, indicating that all the automated tasks have launched. Select `Deactivate` turn cancel launching tasks. Note that this is a demo, and nothing actually happens.
 
-<img width="1470" alt="activatedTasks" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/3698e92e-a84b-4192-8882-7d2e9cb59189">
+<img width="1470" alt="activatedTasks" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/b4ee0efc-fc50-47c1-b628-7a12693f98ac">
 
 [Back](#harmonious-hr-app)
 
 ### Navigation Bar
-- From the top navigation bar, you can navigate `Back` to previous page, `Home` to your task list, `Profile` to your account profile, or `Log out` to log out of the app.  
+- From the top navigation bar, you can navigate `Back` to previous page, `Home` to your task list, `Profile` to your account profile, or `Log out` to log out of the app.  `Help` brings you to this page.
 
 ### Task List
 - The title bar welcomes you to the task list, showing you how many incomplete tasks you currently have. The search bar is case sensitive, and shows results once you hit enter or the `Search` button. Remove the search input and hit enter or `Search` again to see your entire task list.  
@@ -107,6 +108,11 @@ Either confirm the deletion or click `Back` to go back to the tasks page.
 
 ### Adding and Editing Tasks
 The add and edit tasks forms are exactly the same, as shown in the demo section above. You may view, add, or edit information, and select `Submit` to save all changes, or go `Back` to discard.
+
+### Profile page
+Currently new users have a default profile image, and may update the image to a new one. Click on `Change Profile Picture` to select a new profile picture. Click on `Upload` to apply the new image or `Cancel` to exit without saving.
+
+<img width="1470" alt="imageUpload" src="https://github.com/kimintime/Harmonious_HR_taskmanager/assets/40215472/a56bc0df-d8ca-4397-b245-ad6d31c0ea21">
 
 ---
 
