@@ -66,6 +66,12 @@ class ProfileUpdateView(FormView):
       
       return kwargs
    
+   def get_context_data(self, **kwargs):
+      context = super().get_context_data(**kwargs)
+      context['p-form'] = self.get_form()
+      
+      return context
+   
 @login_required
 def profile(request):
    return render(request, 'users/profile.html')
