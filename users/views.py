@@ -11,6 +11,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from .models import Profile
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class RegisterPage(FormView):
    template_name = 'users/register.html'
@@ -48,7 +49,7 @@ class ProfileUpdateForm(forms.ModelForm):
       model = Profile
       fields = ['image']
 
-class ProfileUpdateView(FormView):
+class ProfileUpdateView(LoginRequiredMixin, FormView):
    form_class = ProfileUpdateForm
    success_url = reverse_lazy('profile')
    template_name = 'users/profile.html'

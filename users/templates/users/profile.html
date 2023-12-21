@@ -17,7 +17,7 @@
             <!-- Profile picture update form -->
             <form method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ p_form.as_p }}
+                {{ p_form }}
                 <button type="submit">Update</button>
             </form>
         </div>
